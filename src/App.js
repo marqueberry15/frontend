@@ -1,4 +1,4 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { BrowserRouter, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Home from './pages/Home';
 import Header from './components/Header';
@@ -35,7 +35,7 @@ function App() {
 
   return (
    
-    <Router>
+    <BrowserRouter>
        <ScrollToTop />
       {!window.location.pathname.includes("dashboard") ? (
           <Header />
@@ -94,7 +94,7 @@ function App() {
           <Footer />
         ) : null}
 
-    </Router>
+    </BrowserRouter>
      
    
   );

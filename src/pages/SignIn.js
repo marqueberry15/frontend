@@ -63,7 +63,8 @@ const SignIn = () => {
                       console.log("dispatch");
                       dispatch(setUserID(res.data.userid));
                       let USER = {
-                        userId: res.data.userid,
+                        first_name: res.data.user.FirstName,
+                        userId: res.data.user.Email,
                         isLoggin: true,
                       };
                       console.log("user", USER);

@@ -132,26 +132,7 @@ const Form = () => {
 
     if (fileUpload != null) {
     
-      // const response=await axios.post(`${config.API_URL}/brand/logo`,{"file":fileUpload.name,"fileType":fileUpload.type},{headers: {  "Content-Type": "application/json"}})
-      // console.log(response)
-      // const signedUrl = response.data.url;
-      // console.log(1)
-      // const parsedUrl = new URL(signedUrl);
-      // console.log(2)
-      // const key = decodeURIComponent(parsedUrl.pathname.substring(1));
-      // console.log("HIIIIIIIII")
-      // await fetch(signedUrl, {
-      //   method: "PUT",
-      //   headers: {
-      //     "Content-Type": fileUpload.type,
-      //   },
-      //   body: fileUpload,
-      // }).then(async (res) => {
-
-      //   console.log("File uploaded successfully!");})
-      //   .catch((err)=>{
-      //     console.log(err)})
-        
+    
        
 
       await axios
